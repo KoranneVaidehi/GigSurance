@@ -294,33 +294,7 @@ Failed checks go to **manual review — never auto-rejected.** Workers with patc
 
 ## Data Flow Diagram (Level 1)
 
-```
-  [WORKER] ──signup──► (P1: Onboarding & Profiling) ──risk score──► (P2: Monitor & Trigger)
-                                  │                                          │
-                             store profile                            ◄──AQI/Weather/News──
-                                  │                                   [EXTERNAL APIs]
-                                  ▼                                          │
-                           [DS: MongoDB]                              trigger event
-                                  │                                          │
-                          worker history                                     ▼
-                                  └─────────────────────────► (P3: AI Loss Estimation)
-                                                                             │
-                                                                       loss estimate
-                                                                             │
-                                                                             ▼
-                                                                  (P4: Fraud Verification)
-                                                                             │
-                                                              ┌──pass────────┴────fail──┐
-                                                              ▼                         ▼
-                                                       [RAZORPAY]               [Manual Review]
-                                                       UPI Payout
-                                                              │
-                                                         UPI + SMS
-                                                              │
-                                                              ▼
-                                                          [WORKER]
-```
-
+![alt text](diagram-export-19-3-2026-12_59_08-am.png)
 ---
 
 ## Tech Stack
