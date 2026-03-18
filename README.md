@@ -358,5 +358,4 @@ GigSurance does not pretend the smog will not come.
 It simply makes sure that when it does, Vikram does not have to choose between his health and his income.
 
 ---
-
 *Guidewire DEVTrails 2026 — Phase 1 Submission*
