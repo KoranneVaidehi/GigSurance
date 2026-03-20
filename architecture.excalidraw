@@ -26,7 +26,7 @@
       "version": 20,
       "versionNonce": 1348863285,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1773861997105,
       "link": null,
       "locked": false,
@@ -37,6 +37,36 @@
         1
       ],
       "crop": null
+    },
+    {
+      "id": "Etts-PFOAQ3lNF59PczA0",
+      "type": "rectangle",
+      "x": 745.7125466950189,
+      "y": 553.6626772014297,
+      "width": 125.39996337890625,
+      "height": 171.9999847412109,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ae",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1033044716,
+      "version": 147,
+      "versionNonce": 275994324,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1774014752455,
+      "link": null,
+      "locked": false
     }
   ],
   "appState": {
