@@ -11,9 +11,9 @@
 
 ---
 
-> Vikram logged onto Blinkit at 9 AM ready for a full day's work in Delhi.
-> By 10 AM, the AQI crossed 430. He shut the app and went back inside.
-> He lost Rs. 580 that day — with no way to recover it.
+> Vikram logged onto Blinkit at 8 AM ready for a full day's work in Delhi.
+> By 11 AM, the temperature crossed 47°C. He shut the app and went back inside.
+> He lost Rs. 560 that day — with no way to recover it.
 >
 > **GigSurance changes that.**
 
@@ -25,23 +25,23 @@
 
 ## Persona
 
-> **Chosen Segment: Grocery and Quick Commerce — Zepto / Blinkit**
+> **Chosen Segment: Grocery and Quick Commerce — Blinkit**
 
-Meet **Vikram Chauhan** — 24, Delhi NCR, full-time Blinkit delivery partner.
+Meet **Vikram Solanki** — 26, Delhi, full-time Blinkit delivery partner.
 
 | Attribute | Detail |
 |---|---|
-| Platform | Blinkit (primary), Zepto (secondary) |
+| Platform | Blinkit (primary) |
 | Work Model | Per-delivery earnings — no salary, no guaranteed hours |
 | Work Schedule | 7 days a week, 9 to 11 hours per day |
-| Average Weekly Earnings | Rs. 3,500 to Rs. 4,500 |
+| Average Weekly Earnings | Rs. 3,200 to Rs. 4,200 |
 | Device | Budget Android — Redmi Note / Realme C-series |
 | Connectivity | 4G central Delhi, drops to 2G–3G in outer zones |
 | Insurance Status | None — never held any income protection product |
-| Primary Risk | Delhi winter smog — AQI 400+ for up to 20 consecutive days, Nov–Feb |
+| Primary Risk | Delhi summer heat — 45°C+ for up to 30 consecutive days, April–June |
 
-**Why Q-commerce riders are uniquely exposed:**
-Food delivery riders slow down in bad conditions and earn less. Vikram cannot — Blinkit's 10-minute SLA means any disruption causes a complete logoff. Income does not reduce. It hits **zero**. During peak smog season, he loses 4 to 6 working days per month, borrows from family, and starts over.
+**Why Q-commerce riders in Delhi are uniquely exposed:**
+Food delivery riders can slow down in dangerous heat and earn less. Vikram cannot — Blinkit's 10-minute SLA means any disruption causes a complete logoff. Income does not reduce. It hits **zero**. Delhi consistently records some of India's highest temperatures — during peak summer, he loses 5 to 7 working days per month, borrows from family, and starts over.
 
 **GigSurance is built specifically for Vikram.**
 
@@ -53,12 +53,12 @@ India's Q-commerce sector — Blinkit, Zepto, Swiggy Instamart — runs entirely
 
 | Disruption | Real Examples | Impact on Vikram |
 |---|---|---|
-| Severe Air Quality | Delhi AQI 400–500+, Nov–Feb smog season | Cannot ride safely. Logs off. Zero income. |
-| Monsoon Rain | Flash flooding, waterlogged roads, July–Sep | Roads impassable. Blinkit zones go dark. |
-| Extreme Heat | 45°C+ in May–June | Sustained outdoor exertion becomes dangerous |
-| Civil Disruptions | Bandhs, curfews — frequent in Delhi NCR | Delivery zones blocked entirely |
+| Extreme Heat | Delhi 45°C–49°C+, April–June | Sustained outdoor exertion becomes medically dangerous. Logs off. Zero income. |
+| Heat Waves | IMD red alerts — multi-day sustained heat events | Zones go dark for days at a stretch. No deliveries, no earnings. |
+| Monsoon Rain | Flash flooding, waterlogged roads, July–Sep | Roads impassable. Blinkit zones collapse. |
+| Civil Disruptions | Bandhs, curfews — periodic in Gujarat | Delivery zones blocked entirely |
 
-One disrupted day costs Vikram Rs. 400 to Rs. 650. During smog season — Rs. 3,000 to Rs. 5,000 lost in a single month, year after year. Traditional insurance covers none of this.
+One disrupted day costs Vikram Rs. 380 to Rs. 620. During peak summer — Rs. 3,000 to Rs. 5,500 lost in a single month, year after year. Traditional insurance covers none of this.
 
 **This is a predictable, recurring, solvable problem. GigSurance solves it.**
 
@@ -78,24 +78,24 @@ GigSurance is a **parametric insurance platform** — monitors real-world condit
 | Not built for income loss | Built exclusively for income protection |
 | Single claim per event | Independent payout every qualifying day |
 
-Weekly premiums start at **Rs. 30** — rising to Rs. 70 during Vikram's smog season. Seasonally adjusted, not annually fixed.
+Weekly premiums start at **Rs. 30** — rising to Rs. 70 during Vikram's peak summer season. Seasonally adjusted, not annually fixed.
 
 ---
 
 ## Persona-Based Scenario
 
-**Thursday, 9:45 AM. Lajpat Nagar, Delhi. November. The smog is back.**
+**Wednesday, 10:45 AM. Satellite Road, Delhi. May. The heat is relentless.**
 
-Vikram completed two deliveries before the air became unworkable. He logged off Blinkit and went inside. Here is what GigSurance did — without him doing anything:
+Vikram completed three deliveries before the temperature became life-threatening. He logged off Blinkit and went inside. Here is what GigSurance did — without him doing anything:
 
 ```
-  09:30 AM — CPCB AQI API: 441 AQI reported in Lajpat Nagar, Delhi
-  09:31 AM — Trigger engine flags breach. Vikram's active policy identified.
-  09:32 AM — GPS confirms: Vikram was present in zone from 8:00–9:30 AM
-  09:33 AM — AI estimates loss: Rs. 540 (Rs. 60/hr × 9 remaining hours)
-  09:34 AM — Fraud check passes: GPS clean, velocity normal, no anomalies
-  09:35 AM — Razorpay transfer initiated to Vikram's UPI account
-  09:44 AM — SMS: "GigSurance credited Rs. 540 for AQI disruption. Stay safe."
+  10:30 AM — IMD/OpenWeather API: 47.2°C reported in Delhi West zone
+  10:31 AM — Trigger engine flags breach. Vikram's active policy identified.
+  10:32 AM — GPS confirms: Vikram was present in zone from 8:00–10:30 AM
+  10:33 AM — AI estimates loss: Rs. 520 (Rs. 62/hr × 8.5 remaining hours)
+  10:34 AM — Fraud check passes: GPS clean, velocity normal, no anomalies
+  10:35 AM — Razorpay transfer initiated to Vikram's UPI account
+  10:44 AM — SMS: "GigSurance credited Rs. 520 for extreme heat disruption. Stay safe."
 ```
 
 He made a sensible decision about his health.
@@ -108,12 +108,12 @@ He made a sensible decision about his health.
 ```
   [ 1 ] ONBOARDING
         Signs up in under 3 minutes.
-        Inputs: zone, platform (Blinkit / Zepto), daily hours.
+        Inputs: zone, platform (Blinkit), daily hours.
                          |
                          v
   [ 2 ] AI RISK PROFILING
-        Scored on zone AQI history, rainfall, season, and platform SLA.
-        Delhi NCR zones flagged with elevated smog coefficient Nov–Feb.
+        Scored on zone temperature history, heat wave frequency, season, and platform SLA.
+        Delhi zones flagged with elevated heat coefficient April–June.
         Output: risk tier (Low / Medium / High) + weekly premium.
                          |
                          v
@@ -123,13 +123,13 @@ He made a sensible decision about his health.
                          |
                          v
   [ 4 ] CONTINUOUS MONITORING
-        CPCB AQI, OpenWeather, and News APIs polled every 15 minutes
+        IMD, OpenWeather, and News APIs polled every 15 minutes
         across all active Q-commerce zones — around the clock.
                          |
                          v
   [ 5 ] TRIGGER DETECTION
         Threshold crossed → affected policy holders identified instantly.
-        Multi-day smog = independent payout for each qualifying day.
+        Multi-day heat waves = independent payout for each qualifying day.
                          |
                          v
   [ 6 ] LOSS ESTIMATION + FRAUD CHECK
@@ -146,7 +146,7 @@ He made a sensible decision about his health.
 
 ## Weekly Premium Model
 
-Vikram's premium rises during smog season and falls in cleaner months — recalculated every week, not annually.
+Vikram's premium rises during peak summer and falls in cooler months — recalculated every week, not annually.
 
 **Formula:**
 
@@ -159,21 +159,22 @@ Vikram's premium rises during smog season and falls in cleaner months — recalc
     P  =  Probability       Likelihood of a qualifying trigger this week
 ```
 
-**Risk Score inputs for a Delhi Q-commerce rider:**
-- Historical AQI breach frequency for the zone (24 months, CPCB data)
-- Month and season — Nov–Feb carries an elevated Delhi smog coefficient
-- Rainfall and flood frequency for the zone
-- Worker's daily hours — 9 to 11 hours means maximum exposure
-- Platform SLA — Blinkit / Zepto 10-minute window causes full logoff on any disruption
+**Risk Score inputs for an Delhi Q-commerce rider:**
+- Historical temperature breach frequency for the zone (24 months, IMD data)
+- Month and season — April–June carries an elevated Delhi heat coefficient
+- Rainfall and flood frequency for the zone (monsoon overlay)
+- Worker's daily hours — 9 to 11 hours means maximum heat exposure
+- Platform SLA — Blinkit's 10-minute window causes full logoff on any disruption
 
 **Vikram's seasonal premium across the year:**
 
 | Months | Risk Context | Weekly Premium |
 |---|---|---|
-| March – May | Pre-summer, low disruption | Rs. 30 |
-| June – September | Monsoon season | Rs. 50 |
-| October | Post-monsoon transition | Rs. 30 |
-| November – February | Peak Delhi smog season | Rs. 70 |
+| January – February | Cool season, low disruption | Rs. 30 |
+| March | Pre-summer warming | Rs. 40 |
+| April – June | Peak Delhi heat season | Rs. 70 |
+| July – September | Monsoon season | Rs. 50 |
+| October – December | Post-monsoon, low disruption | Rs. 30 |
 
 ---
 
@@ -183,12 +184,12 @@ Vikram's premium rises during smog season and falls in cleaner months — recalc
 
 | Trigger | Threshold | Data Source | Justification |
 |---|---|---|---|
-| Air Quality | AQI > 400 | CPCB / IQAir | India "Severe" band — CPCB advises against all outdoor physical activity. Primary trigger for Delhi NCR. |
+| Extreme Heat | > 45°C | IMD / OpenWeather | IMD red alert — sustained outdoor exertion at 45°C+ is medically dangerous. Primary trigger for Delhi. |
+| Heat Wave (Multi-day) | > 45°C for 2+ consecutive days | IMD | IMD declared heat wave — Delhi zones experience sustained delivery collapse |
 | Rainfall | > 12 mm/hr sustained | OpenWeather | IMD heavy rain — Delhi roads flood, Q-commerce zones collapse |
-| Extreme Heat | > 45°C | OpenWeather | IMD red alert — outdoor exertion 9+ hours is medically dangerous |
-| Civil Disruption | Bandh / curfew declared | Google News | Zones legally or physically inaccessible — frequent in Delhi |
+| Civil Disruption | Bandh / curfew declared | Google News | Zones legally or physically inaccessible |
 
-**Multi-day smog:** AQI checked every 6 hours. Each qualifying day fires an independent payout. Vikram takes no action between days.
+**Multi-day heat waves:** Temperature checked every 6 hours. Each qualifying day fires an independent payout. Vikram takes no action between days.
 
 ---
 
@@ -207,7 +208,7 @@ Vikram's premium rises during smog season and falls in cleaner months — recalc
 
 **GPS limitation handled architecturally** — Vikram's last known GPS ping at trigger time is cross-checked against the disrupted zone. Zone-level accuracy is sufficient without background tracking.
 
-**Future:** Native Android app for push AQI alerts, background tracking, and deeper offline support once the product is validated.
+**Future:** Native Android app for push temperature alerts, background tracking, and deeper offline support once the product is validated.
 
 ---
 
@@ -219,10 +220,10 @@ AI is embedded at three critical points — not bolted on as an afterthought.
 
 | Input | Detail |
 |---|---|
-| Zone AQI history | 24 months of CPCB data per ward |
-| Seasonal coefficient | Nov–Feb elevated for all Delhi NCR zones |
+| Zone temperature history | 24 months of IMD data per ward |
+| Seasonal coefficient | April–June elevated for all Delhi zones |
 | Rainfall frequency | Historical flood events per zone |
-| Daily hours declared | More hours = greater daily exposure |
+| Daily hours declared | More hours = greater daily heat exposure |
 | Platform SLA type | 10-min SLA causes full logoff vs. partial slowdown |
 
 **Output:** Risk score 0.5–2.5 → feeds weekly premium formula. Model retrains monthly.
@@ -234,9 +235,9 @@ AI is embedded at three critical points — not bolted on as an afterthought.
 | Input | Detail |
 |---|---|
 | Average hourly earnings | Captured at onboarding, updated over time |
-| Time of day trigger fires | 7 AM breach = full day lost; 3 PM = partial |
+| Time of day trigger fires | 8 AM breach = full day lost; 2 PM = partial |
 | Disruption duration | Estimated from API polling continuity |
-| Zone productivity history | Drop rates from similar past events |
+| Zone productivity history | Drop rates from similar past heat events |
 
 **Output:** Rupee payout amount — proportional to impact, not a flat sum.
 
@@ -259,14 +260,14 @@ Failed checks go to **manual review — never auto-rejected.** Workers with patc
 ```
   +-------------------------------------------------------------------+
   |                       FRONTEND — PWA                              |
-  |  Dashboard | Subscription | Payout History | AQI Feed | Coverage  |
+  |  Dashboard | Subscription | Payout History | Temp Feed | Coverage |
   +---------------------------------+---------------------------------+
                                     | REST API
   +---------------------------------v---------------------------------+
   |                    BACKEND — FastAPI (Python)                     |
   +---------------------+---------------------+---------------------+
   |     AI ENGINE       |   TRIGGER ENGINE    |    FRAUD GUARD      |
-  |  Risk Scoring       |  AQI — primary      |  GPS Zone Check     |
+  |  Risk Scoring       |  Heat — primary     |  GPS Zone Check     |
   |  Loss Estimation    |  Weather / Rain     |  Velocity Analysis  |
   |  Premium Calc       |  Civil Events       |  Isolation Forest   |
   |  Seasonal Adjust    |  Multi-day Tracker  |  Manual Review Q    |
@@ -274,7 +275,7 @@ Failed checks go to **manual review — never auto-rejected.** Workers with patc
              |                     |
   +----------v----------+ +--------v------------------------------+
   |      ML MODELS      | |        EXTERNAL API LAYER            |
-  |  XGBoost            | |  CPCB AQI   IQAir   OpenWeather      |
+  |  XGBoost            | |  IMD Temp   IQAir   OpenWeather      |
   |  Scikit-learn       | |  Google News   Google Maps           |
   |  Isolation Forest   | |  Razorpay                            |
   +----------+----------+ +--------------------------------------+
@@ -282,7 +283,7 @@ Failed checks go to **manual review — never auto-rejected.** Workers with patc
   +----------v--------------------------------------------------+
   |                   DATA LAYER — MongoDB                      |
   |  Collection 1 : Worker records · Policies · Payout history  |
-  |  Collection 2 : Trigger logs · AQI events · API responses   |
+  |  Collection 2 : Trigger logs · Temp events · API responses  |
   +----------+--------------------------------------------------+
              |
   +----------v-----------------------------+
@@ -295,6 +296,7 @@ Failed checks go to **manual review — never auto-rejected.** Workers with patc
 ## Data Flow Diagram (Level 1)
 
 ![alt text](diagram-export-19-3-2026-12_59_08-am.png)
+
 ---
 
 ## Tech Stack
@@ -304,10 +306,10 @@ Failed checks go to **manual review — never auto-rejected.** Workers with patc
 | Backend | Python, FastAPI | Async performance, clean REST design, native ML support |
 | Risk Model | XGBoost, Scikit-learn | Best-in-class for tabular seasonal risk data |
 | Fraud Detection | Isolation Forest | Unsupervised — no labelled fraud data required to start |
-| Phase 3 ML | TensorFlow / PyTorch | Future predictive AQI forecasting models |
+| Phase 3 ML | TensorFlow / PyTorch | Future predictive temperature forecasting models |
 | Data Processing | Pandas, NumPy | Feature engineering and batch inference |
 | Database | MongoDB | Flexible schema for variable event structures and seasonal chains |
-| External Data | CPCB, IQAir, OpenWeather, Google News, Maps | Independent authoritative sources — trigger integrity depends on this |
+| External Data | IMD, IQAir, OpenWeather, Google News, Maps | Independent authoritative sources — trigger integrity depends on this |
 | Payments | Razorpay | Full UPI support, instant transfer, dominant in India |
 | Deployment | Docker, AWS / Render / Railway | Containerised, cloud-scalable |
 | Frontend | PWA (HTML, CSS, JS) | Zero friction, works on budget Android on 3G |
@@ -319,20 +321,20 @@ Failed checks go to **manual review — never auto-rejected.** Workers with patc
 | Phase | What Gets Built | Status |
 |---|---|---|
 | Phase 1 | Persona, README, architecture, DFD, premium formula, trigger design | Complete |
-| Phase 2 | FastAPI backend, AQI trigger engine, multi-day tracker, Razorpay integration, onboarding flow | In Progress |
+| Phase 2 | FastAPI backend, heat trigger engine, multi-day tracker, Razorpay integration, onboarding flow | In Progress |
 | Phase 3 | XGBoost premium model, Isolation Forest fraud detection, analytics dashboard | Planned |
 
 ---
 
 ## Future Scope
 
-**Direct Platform Integration** — Connect to Blinkit / Zepto APIs for verified real-time earnings. Eliminates estimated payouts entirely.
+**Direct Platform Integration** — Connect to Blinkit APIs for verified real-time earnings. Eliminates estimated payouts entirely.
 
-**Multi-City Calibration** — Delhi smog, Mumbai monsoon, Bangalore rain each need locally calibrated risk coefficients and seasonal calendars.
+**Multi-City Calibration** — Delhi heat, Delhi smog, Mumbai monsoon each need locally calibrated risk coefficients and seasonal calendars.
 
-**Predictive Alerts** — 48-hour AQI forecasts warn Vikram the night before a disruption day — reactive becomes proactive.
+**Predictive Alerts** — 48-hour temperature forecasts warn Vikram the night before a heat disruption day — reactive becomes proactive.
 
-**Native Android App** — Background AQI monitoring, push alerts, richer offline support. PWA proves the concept; native scales it.
+**Native Android App** — Background temperature monitoring, push alerts, richer offline support. PWA proves the concept; native scales it.
 
 **Insurer Dashboard** — Risk pool health, payout frequency, fraud rates, and premium adequacy — the commercial layer that makes GigSurance viable at scale.
 
@@ -351,10 +353,10 @@ Failed checks go to **manual review — never auto-rejected.** Workers with patc
 
 ## Closing Note
 
-Vikram knows Delhi's November smog is coming. He has lived through it every year.
+Vikram knows Delhi's May heat is coming. He has lived through it every year.
 What he has never had is any financial protection for the days it takes from him.
 
-GigSurance does not pretend the smog will not come.
+GigSurance does not pretend the heat will not come.
 It simply makes sure that when it does, Vikram does not have to choose between his health and his income.
 
 ---
