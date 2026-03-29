@@ -243,10 +243,18 @@ Rather than charging the full weekly premium as a single advance deduction, GigS
 **Multi-day heat waves:** Temperature checked every 6 hours. Each qualifying day fires an independent payout. Vikram takes no action between days.
 
 ---
+<div style="color:#fff3cd; padding:10px; border-left:4px solid #ffc107;">
+  <strong style="color:pink;">🚧 Development Note</strong><br>
+ For development purposes, we are currently using a <b>Progressive Web App (PWA) platform </b> to deliver cross-device compatibility quickly and efficiently.  
+ In the future, we plan to transition to <b>fully native mobile applications</b> to leverage deeper integration with device features and provide an optimized user experience.
+</div>
 
 ## Platform Choice — Why PWA
 
 > Decision is driven by Vikram's device reality, not technical convenience.
+
+
+
 
 | Factor | Native App | PWA — GigSurance's Choice |
 |---|---|---|
