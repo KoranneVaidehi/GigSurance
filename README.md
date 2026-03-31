@@ -2,7 +2,6 @@
 
 ### AI-Powered Parametric Insurance for Gig Workers
 
-**Guidewire DEVTrails 2026 — Phase 1 Submission**
 
 [![Platform](https://img.shields.io/badge/Platform-Progressive%20Web%20App-blue?style=flat-square)](https://github.com)
 [![Backend](https://img.shields.io/badge/Backend-Python%20%7C%20FastAPI-green?style=flat-square)](https://github.com)
@@ -148,33 +147,85 @@ He made a sensible decision about his health.
 
 Vikram's premium rises during peak summer and falls in cooler months — recalculated every week, not annually.
 
-**Formula:**
+### Premium Formula
 
 ```
-  Weekly Premium (WP)  =  (B × R)  +  (E × P)
+  Weekly Premium Cap (WC)  =  (B × R)  +  (E × P)
 
-    B  =  Base cost         Rs. 20 fixed floor
-    R  =  Risk score        0.5 to 2.5 — zone, season, hours, platform SLA
-    E  =  Expected loss     Avg income lost per historical disruption event
-    P  =  Probability       Likelihood of a qualifying trigger this week
+    B  =  Base cost                  Rs. 20 fixed floor
+    R  =  Risk score                 0.5 to 2.5 — zone, season, hours, platform SLA
+    E  =  Expected loss              Avg income lost per historical disruption event
+    P  =  Probability                Likelihood of a qualifying trigger this week
+
+  Per Delivery Deduction (PDD)  =  WC / Projected_Weekly_Deliveries
+
+    Projected_Weekly_Deliveries  =  Rolling average of last 4 weeks
 ```
 
-**Risk Score inputs for an Delhi Q-commerce rider:**
+**Risk Score inputs for a Delhi Q-commerce rider:**
 - Historical temperature breach frequency for the zone (24 months, IMD data)
 - Month and season — April–June carries an elevated Delhi heat coefficient
 - Rainfall and flood frequency for the zone (monsoon overlay)
 - Worker's daily hours — 9 to 11 hours means maximum heat exposure
 - Platform SLA — Blinkit's 10-minute window causes full logoff on any disruption
 
-**Vikram's seasonal premium across the year:**
+---
 
-| Months | Risk Context | Weekly Premium |
-|---|---|---|
-| January – February | Cool season, low disruption | Rs. 30 |
-| March | Pre-summer warming | Rs. 40 |
-| April – June | Peak Delhi heat season | Rs. 70 |
-| July – September | Monsoon season | Rs. 50 |
-| October – December | Post-monsoon, low disruption | Rs. 30 |
+### Micro-Deduction Collection Model
+
+Rather than charging the full weekly premium as a single advance deduction, GigSurance uses a **per-delivery micro-deduction model** — aligning the cost of insurance with the act of earning.
+
+**How it works:**
+
+```
+  Every completed delivery  →  Rs. 0.50 to Rs. 1.00 automatically deducted
+  Deductions continue       →  until the Weekly Cap (WC) is reached
+  Once cap is reached       →  all further deliveries that week are deduction-free
+  End of week shortfall     →  remaining balance auto-debited via UPI
+```
+
+**Example — Vikram in May (Weekly Cap = Rs. 70, ~90 deliveries expected):**
+
+```
+  Per delivery cut   =  Rs. 70 / 90  =  Rs. 0.78  →  rounded to Rs. 1.00
+  After delivery 70  →  Rs. 70 collected. Cap reached.
+  Deliveries 71–90   →  Zero deduction. Vikram keeps full earnings.
+```
+
+**Shortfall handling (low-delivery week):**
+
+```
+  Deliveries completed  =  25
+  Collected via cuts    =  Rs. 25
+  Weekly cap            =  Rs. 70
+  Shortfall             =  Rs. 45  →  auto-debited at week end via UPI
+  Coverage              =  Uninterrupted for the full week
+```
+
+> Vikram is informed of this at onboarding — no surprises.
+
+**Why this model works for Vikram:**
+
+| Concern | How Micro-Deduction Addresses It |
+|---|---|
+| Upfront payment pressure | No single large deduction — cost spread across deliveries |
+| Low-earning weeks | Partial collection via deliveries + small end-of-week top-up |
+| High-earning weeks | Cap reached early — remaining deliveries are deduction-free |
+| Psychological friction | Rs. 1 per delivery is imperceptible — less than 1% of a single delivery payout |
+
+---
+
+### Vikram's Seasonal Premium Across the Year
+
+| Months | Risk Context | Weekly Cap | Approx. Per-Delivery Cut |
+|---|---|---|---|
+| January – February | Cool season, low disruption | Rs. 30 | Rs. 0.33 |
+| March | Pre-summer warming | Rs. 40 | Rs. 0.44 |
+| April – June | Peak Delhi heat season | Rs. 70 | Rs. 0.78 |
+| July – September | Monsoon season | Rs. 50 | Rs. 0.56 |
+| October – December | Post-monsoon, low disruption | Rs. 30 | Rs. 0.33 |
+
+*Per-delivery cut based on projected 90 deliveries/week. Recalculates weekly with actual delivery history.*
 
 ---
 
@@ -192,10 +243,18 @@ Vikram's premium rises during peak summer and falls in cooler months — recalcu
 **Multi-day heat waves:** Temperature checked every 6 hours. Each qualifying day fires an independent payout. Vikram takes no action between days.
 
 ---
+<div style="color:#fff3cd; padding:10px; border-left:4px solid #ffc107;">
+  <strong style="color:pink;">🚧 Development Note</strong><br>
+ For development purposes, we are currently using a <b>Progressive Web App (PWA) platform </b> to deliver cross-device compatibility quickly and efficiently.  
+ In the future, we plan to transition to <b>fully native mobile applications</b> to leverage deeper integration with device features and provide an optimized user experience.
+</div>
 
 ## Platform Choice — Why PWA
 
 > Decision is driven by Vikram's device reality, not technical convenience.
+
+
+
 
 | Factor | Native App | PWA — GigSurance's Choice |
 |---|---|---|
@@ -360,4 +419,3 @@ GigSurance does not pretend the heat will not come.
 It simply makes sure that when it does, Vikram does not have to choose between his health and his income.
 
 ---
-*Guidewire DEVTrails 2026 — Phase 1 Submission*
