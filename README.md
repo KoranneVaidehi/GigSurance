@@ -28,7 +28,7 @@ GigSurance is an **AI-powered parametric insurance platform** that protects gig 
 -  **Instant payouts** — under 5 minutes, no claim needed
 -  **AI-personalised premiums** — recalculated every week per worker and zone
 -  **Location-based trigger detection** — IMD and OpenWeather APIs, around the clock
--  **Weekly subscription from ₹30** — per-delivery micro-deduction, no upfront burden
+-  **Weekly subscription from ₹30** — per-delivery micro-deduction, no upfront burden.
 
 **Built for:** Blinkit · Zepto · Swiggy Instamart delivery partners
 
